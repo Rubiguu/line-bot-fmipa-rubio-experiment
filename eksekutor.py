@@ -1,6 +1,6 @@
 #tipe text.Message
 from keyword_umum  import keyword_umum, cek_umum
-from keyword_ultah import keyword_ultah
+from keyword_ultah import keyword_ultah, kalender
 #tipe Image.Message
 from keyword_latex import keyword_latex
 
@@ -21,4 +21,4 @@ def Result(Input):
     elif Input[:10] == '!cek-ultah':
         return(keyword_ultah())
     elif Input[:6] == '!latex':
-        return(keyword_latex(Input[5:]))
+        return(keyword_latex(Input[6:]))
